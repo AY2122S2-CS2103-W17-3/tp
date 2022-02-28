@@ -70,23 +70,45 @@ Shows a message explaining how to access the ClientConnect help page.
 
 Format: `help`
 
+Alternatively, click the Help button on the toolbar to view a dropdown window displaying a "Help ... F1" button.
+
+This also shows that you can press F1 on your keyboard to open the help message.
+
+![Help button image](images/helpButtonUG.png)
+
+You will see this as a result:
+
+![Help window image](images/helpWindowUG.png)
+
 ### Adding a person: `add`
 
 Adds a person, as well as any details, to ClientConnect.
 
-Format: `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS i/INSURANCE_PACKAGE [t/TAG]…​`
+Format: `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS [i/INSURANCE_PACKAGE] [t/TAG]…​`
 
 Examples:
-* `add n/Damith p/99998888 e/damith@damith.com`
+* `add n/Damith p/99998888 e/damith@damith.com a/Blk 123`
 * `add n/Jackson p/92341888 e/jackson5@example.com a/laney street, block 123, #01-01, i/package1 t/important`
 
-Note: Any tags are **optional**, and anyone can have any number of tags, even 0
+Before adding:
+
+![result before 'add n/Damith p/99998888 e/damith@damith.com a/Blk 123'](images/beforeAddDamithUG.png)
+
+After adding:
+
+![result after 'add n/Damith p/99998888 e/damith@damith.com a/Blk 123'](images/afterAddDamithUG.png)
+
+Notes: 
+* The insurance package is optional, so you can add a new client first, then add his/her insurance package.
+* Any other tags are optional as well.
 
 ### Listing all persons : `list`
 
 Displays all your clients in ClientConnect.
 
 Format: `list`
+
+![result for 'list'](images/listAllClientsUG.png)
 
 ### Editing a person : `edit`
 
@@ -96,6 +118,19 @@ Format: `edit INDEX [n/NAME] [p/PHONE] [e/EMAIL] [a/ADDRESS] [i/INSURANCE_PACKAG
 
 Examples:
 * `edit 1 p/123456 will edit the phone number of the client listed as #1 to 123456`
+
+Before editing:
+
+![result for 'list'](images/listAllClientsUG.png)
+
+Edit:
+
+![result before 'edit 1 p/123456'](images/beforeEditUG.png)
+
+After editing:
+
+![result after 'edit 1 p/123456'](images/afterEditUG.png)
+
 
 Notes:
 * Edits the person at the specified `INDEX`.
@@ -127,10 +162,11 @@ Examples:
 * `find p/91234567` returns the client that is associated to the number
 * `find a/street` returns the client associated with the address
 
-![result for 'find alex david'](images/findAlexDavidResult.png)
+After a `find` command:
+
+![result for 'find alex david'](images/findAlexDavidResultUG.png)
 * `find n/alex david` returns `Alex Yeoh`, `David Li`
 
-![result for 'find alex david'](images/findAlexDavidResult.png)
 
 ### Deleting a person : `delete`
 
@@ -145,6 +181,14 @@ Format: `delete INDEX`
 Examples:
 1. `delete 1`
 2. `find n/John` followed by `delete 1` deletes the 1st person in the results provided by ClientConnect after finding by the `John` keyword
+
+Before a delete command:
+
+![result before 'delete 2'](images/beforeDeleteUG.png)
+
+After `delete 2`:
+
+![result after 'delete 2'](images/afterDeleteUG.png)
 
 ### Clearing all entries : `clear`
 
@@ -171,3 +215,11 @@ Format: `exit`
 | **List**   | `list`|
  | **Help**   | `help`|
  | **Exit**   | `exit`|
+
+Fields:
+* `n/`: name
+* `p/`: phone number
+* `e/`: email
+* `a/`: address
+* `i/`: insurance package
+* `t/`: tags
