@@ -98,7 +98,7 @@ After adding:
 
 ![result after 'add n/Damith p/99998888 e/damith@damith.com a/Blk 123'](images/afterAddDamithUG.png)
 
-Notes: 
+Notes:
 * The insurance package is optional, so you can add a new client first, then add his/her insurance package.
 * Any other tags are optional as well.
 
