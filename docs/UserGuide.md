@@ -84,7 +84,8 @@ You will see this as a result:
 
 Adds a person, as well as any details, to ClientConnect.
 
-Format: `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS [i/INSURANCE_PACKAGE] [t/TAG]…​`
+
+Format: `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS [i/INSURANCE_PACKAGE] [t/TAG]…`
 
 Examples:
 * `add n/Damith p/99998888 e/damith@damith.com a/Blk 123`
@@ -114,7 +115,7 @@ Format: `list`
 
 Edits an existing client in ClientConnect, similar to adding a new client.
 
-Format: `edit INDEX [n/NAME] [p/PHONE] [e/EMAIL] [a/ADDRESS] [i/INSURANCE_PACKAGE] [t/TAG]…​`
+Format: `edit INDEX [n/NAME] [p/PHONE] [e/EMAIL] [a/ADDRESS] [i/INSURANCE_PACKAGE] [t/TAG]…`
 
 Examples:
 * `edit 1 p/123456 will edit the phone number of the client listed as #1 to 123456`
@@ -208,9 +209,9 @@ Format: `exit`
 
 | Action     | Format, Examples|
 |------------|------------------|
-| **Add**    | `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS i/INSURANCE_PACKAGE [t/TAG]…​` <br> e.g., `add n/James Ho p/22224444 e/jamesho@example.com a/123, Clementi Rd, 1234665 i/package1 t/friend t/colleague`|
+| **Add**    | `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS i/INSURANCE_PACKAGE [t/TAG]` <br> e.g., `add n/James Ho p/22224444 e/jamesho@example.com a/123, Clementi Rd, 1234665 i/package1 t/friend t/colleague`|
  | **Delete** | `delete INDEX`<br> e.g., `delete 3`|
-| **Edit**   | `edit INDEX [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [a/ADDRESS] [i/INSURANCE_PACKAGE] [t/TAG]…​`<br> e.g.,`edit 2 n/James Lee e/jameslee@example.com`|
+| **Edit**   | `edit INDEX [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [a/ADDRESS] [i/INSURANCE_PACKAGE] [t/TAG]`<br> e.g.,`edit 2 n/James Lee e/jameslee@example.com`|
  | **Find**   | `find FIELD KEYWORD [MORE_KEYWORDS]`<br> e.g., `find n/James Jake`|
 | **List**   | `list`|
  | **Help**   | `help`|
